@@ -41,7 +41,7 @@ header{
     font-size: 200%;  
 }
 
-button{
+.test button{
     margin-left: 30%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -58,3 +58,18 @@ h1 {
     text-align: center;
 }
 
+.hiScore{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.hiScore p{
+    font-size: 90%;
+}
+
+.bold {
+    margin-top: 5%;
+    font-size: 300%;
+    font-weight: bold;
+}

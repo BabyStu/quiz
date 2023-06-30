@@ -8,44 +8,33 @@
 </head>
 <body>
   <header>
-    <a href="highscores">View Highscores</a>
+    <a href="#" id="highscoreLink">View Highscores</a>
     <div class="timerCSS">Time: <span id="timerJS"></span></div>
   </header>
   <main class="test">
     <div class="testContainer">
-      <h1>JavaScript Quiz</h1>
+      <h1>Math Quiz</h1>
       <div class="testBox">
         <div id="questionContainer"></div>
         <div id="answersContainer"></div>
-        <button id="startButton">Start Quiz</button>
-        <div id="score"></div>
+        <button id="startButton">Start</button>
+        <div id="score">
+        
+        </div>
       </div>
     </div>
   </main>
+  
+  <section id="hide" class="hiScore">
+    <p>Please enter your name for highscores: </p>
+    <textarea id="enterName"></textarea>
+    <button id="nameBtn">Enter</button>
+  </section>
+  <section class="hiScore bold">
+    <div id="scoreContainer"></div>
+  </section>
+
   <script src="script.js"></script>
-
-  <!-- <p>Count numbers: <output id="result"></output></p>
-  <button onclick="startWorker()">Start Worker</button>
-  <button onclick="stopWorker()">Stop Worker</button>
-  
-  <script>
-  let w;
-  
-  function startWorker() {
-    if (typeof(w) == "undefined") {
-      w = new Worker("demo_workers.js");
-    }
-    w.onmessage = function(event) {
-      document.getElementById("result").innerHTML = event.data;
-    };
-  }
-  
-  function stopWorker() {
-    w.terminate();
-    w = undefined;
-  }
-  </script> -->
-
 </body>
 </html>
 
